@@ -1,10 +1,9 @@
-import React from 'react'
+import Dashboard from './pages/Dashboard'
 
 const App = () => {
   return (
     <div>
-      <h1>Welcome to the E-Voting Student Frontend</h1>
-      <p>This is the main application component.</p>
+      <Dashboard />
     </div>
   )
 }

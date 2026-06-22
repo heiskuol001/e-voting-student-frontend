@@ -5,7 +5,7 @@ const CandidateCard = ({name, position}) => {
   const candidateId = useId()
 
   return (
-    <article className='group relative h-full w-36 shrink-0'>
+    <article className='group relative min-h-36 w-full'>
       <input
         type='radio'
         name='candidate'
@@ -13,7 +13,7 @@ const CandidateCard = ({name, position}) => {
         className='peer sr-only'
       />
 
-      <div className='flex h-full flex-col gap-1.5 rounded-md border border-slate-200 bg-white p-2 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md peer-focus-visible:ring-2 peer-focus-visible:ring-emerald-500 peer-focus-visible:ring-offset-2 peer-checked:border-emerald-500 peer-checked:bg-emerald-50 peer-checked:[&_[data-selection-indicator]]:border-emerald-600 peer-checked:[&_[data-selection-indicator]]:bg-emerald-600'>
+      <div className='flex h-full min-h-36 flex-col gap-1.5 rounded-md border border-slate-200 bg-white p-2 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md peer-focus-visible:ring-2 peer-focus-visible:ring-emerald-500 peer-focus-visible:ring-offset-2 peer-checked:border-emerald-500 peer-checked:bg-emerald-50 peer-checked:[&_[data-selection-indicator]]:border-emerald-600 peer-checked:[&_[data-selection-indicator]]:bg-emerald-600'>
         <label htmlFor={candidateId} className='cursor-pointer'>
           <div className='flex items-start gap-2'>
             <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-[10px] font-bold text-emerald-700 ring-2 ring-white'>
